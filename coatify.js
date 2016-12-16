@@ -1,30 +1,15 @@
-var coat = require("mithril-coat"),
-    through = require("through");
+var coat = require("mithril-coat");
 
-function coatify(file) {
-    var data = "",
-        stream = through(write, end);
+function coatify(source) {
+    var result;
+    coat.compile(source, { wrapFunction: true }, function(error, compiledTemplate) {
+        if (error) {
+            throw new Error("WUTEVA I DO WHAT I WANT");
+        }
 
-    function write(buf) {
-        return data += buf;
-    }
-
-    function end() {
-        coat.compile(data, { wrapFunction: true }, function(error, compiledTemplate) {
-            var template = "";
-
-            if (error) {
-                stream.emit("error", error);
-            }
-
-            template = "module.exports = " + compiledTemplate + " ;"
-
-            stream.queue(template);
-            stream.queue(null);
-        });
-    }
-
-    return data;
+        result = "module.exports = " + compiledTemplate + " ;";
+    });
+    return result;
 }
 
 module.exports = coatify;
