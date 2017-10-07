@@ -1,6 +1,6 @@
 {
   "name": "coatify-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "webpack plugin for mithril-coat templates",
   "main": "coatify.js",
   "author": "The Muse <ian@themuse.com> (https://www.themuse.com/)",
