@@ -1,0 +1,49 @@
+{
+  "_from": "github:dailymuse/coatify-loader#eb5954080de6ad26236a663523b481da08cfca3a",
+  "_id": "coatify-loader@0.1.2",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/coatify-loader",
+  "_phantomChildren": {
+    "browserify": "4.2.3",
+    "domhandler": "2.2.0",
+    "htmlparser2": "3.8.0",
+    "mithril": "0.2.0",
+    "node-watch": "0.3.4",
+    "optimist": "0.6.1",
+    "pubsub-js": "1.9.4",
+    "uglify-js": "2.4.15",
+    "underscore": "1.7.0"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "coatify-loader@github:dailymuse/coatify-loader#eb5954080de6ad26236a663523b481da08cfca3a",
+    "name": "coatify-loader",
+    "escapedName": "coatify-loader",
+    "rawSpec": "github:dailymuse/coatify-loader#eb5954080de6ad26236a663523b481da08cfca3a",
+    "saveSpec": "github:dailymuse/coatify-loader#eb5954080de6ad26236a663523b481da08cfca3a",
+    "fetchSpec": null,
+    "gitCommittish": "eb5954080de6ad26236a663523b481da08cfca3a"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:dailymuse/coatify-loader#eb5954080de6ad26236a663523b481da08cfca3a",
+  "_spec": "coatify-loader@github:dailymuse/coatify-loader#eb5954080de6ad26236a663523b481da08cfca3a",
+  "_where": "/app",
+  "author": {
+    "name": "The Muse",
+    "email": "ian@themuse.com",
+    "url": "https://www.themuse.com/"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "mithril-coat": "^0.2.0-alpha"
+  },
+  "deprecated": false,
+  "description": "webpack plugin for mithril-coat templates",
+  "license": "BSD",
+  "main": "coatify.js",
+  "name": "coatify-loader",
+  "version": "0.1.2"
+}
